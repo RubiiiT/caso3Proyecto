@@ -13,6 +13,10 @@ public class ProgramaPrincipal {
 		double radio = pedirRadio();
 		System.out.println("El area de la circunferencia con radio "+radio+" es "+areaCircunferencia(radio));
 		System.out.println("El perímetro de la circunferencia con radio "+radio+" es "+perimetroCircunferencia(radio));
+		
+		double areacil = calcularAreaCilindro(pedirRadio(), pedirAltura());
+		System.out.println("El area del cilindro es: " + areacil);
+		
 	}
 	//Area triangulo
 		public static double calcularArea(double altura, double base) {
@@ -78,5 +82,9 @@ public class ProgramaPrincipal {
 				return 2*3.14*radio;
 				
 			}
+			//Area cilindro
+			public static double calcularAreaCilindro(double radio, double altura) {
+				double area = (2*pi) * radio * altura + (2*pi) * (radio * radio);
+				return area;
 
 }
