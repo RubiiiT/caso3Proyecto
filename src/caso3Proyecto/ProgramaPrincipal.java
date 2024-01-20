@@ -20,6 +20,9 @@ public class ProgramaPrincipal {
 		double areaRectangulo = calcularAreaRectangulo(pedirLado(),pedirLado());
 		System.out.println("El area del rectangulo es: " + areaRectangulo);
 		
+		double areaCubo= areaCubo(pedirLado());
+		System.out.println("El area del cubo es: "+areaCubo);
+		
 	}
 	//Area triangulo
 		public static double calcularArea(double altura, double base) {
@@ -108,6 +111,12 @@ public class ProgramaPrincipal {
 						
 					}while(lado1<1);
 					return lado1;
+
+				}
+				
+				//area cubo
+				public static double areaCubo(double lado) {
+					return 6*(lado*lado);
 
 				}
 
