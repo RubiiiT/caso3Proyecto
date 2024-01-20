@@ -20,8 +20,13 @@ public class ProgramaPrincipal {
 		double areaRectangulo = calcularAreaRectangulo(pedirLado(),pedirLado());
 		System.out.println("El area del rectangulo es: " + areaRectangulo);
 		
+
 		double volumenCubo = calcularVolumenCubo(pedirLado());
 		System.out.println("El volumen del cubo es: " + volumenCubo);
+
+		double areaCubo= areaCubo(pedirLado());
+		System.out.println("El area del cubo es: "+areaCubo);
+
 		
 	}
 	//Area triangulo
@@ -113,10 +118,18 @@ public class ProgramaPrincipal {
 					return lado1;
 
 				}
+
 				//volumen cubo
 				public static double calcularVolumenCubo(double lado) {
 					double volumen = lado * lado * lado;
 					return volumen;
+
+				
+				//area cubo
+				public static double areaCubo(double lado) {
+					return 6*(lado*lado);
+
+
 				}
 
 }
